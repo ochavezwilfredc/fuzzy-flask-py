@@ -49,7 +49,7 @@ rule6a = ctrl.Rule(edad['niño'] | sexo['hombre'], gerf['bajo'])
 rule6b = ctrl.Rule(edad['niño'] | sexo['mujer'], gerf['medio_bajo'])
 
 # #
-# # rule1.view()
+# rule1a.view()
 #
 gerf_ctrl = ctrl.ControlSystem(
     [rule1a, rule1b, rule2, rule3a, rule3b, rule4a, rule4b, rule5a, rule5b, rule6a, rule6b])

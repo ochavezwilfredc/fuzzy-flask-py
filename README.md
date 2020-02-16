@@ -3,15 +3,22 @@
 - **Edad**
     - Universo (es decir, rango de valores nítidos): ¿Que edad se especifica para el cáculo, en una escala del 1 al 100?
     - Conjunto difuso (es decir, rango de valores difusos): niño, adolecente, joven, adulto, adulto mayor
-    
+
+![Variable edad](resources/img/edad.jpeg)
+
 - **Sexo**
     - Universo: ¿Cual es tu sexo!, en una escala del 0 al 25?
     - Conjunto difuso: hombre, mujer, na
+
+![Variable edad](resources/img/sexo.jpeg)
 
 ### Consecuencias (Salidas)
 - **Ger**
     - Universo: ¿Valor que debería ser, en una escala de 0 al 61
     - Conjunto difuso: bajo, medio bajo, medio, medio alto, alto
+
+![Variable edad](resources/img/gerf.jpeg)
+
 
 ### Reglas
 * SI la edad corresponde a un adulto **o** el sexo de la persona es hombre, ENTONCES el cálculo del ger será bajo.
@@ -48,3 +55,4 @@
     - La edad = 25, y el sexo = Mujer
 - **Genera un valor:**
     - **GER:** 2016
+![Variable edad](resources/img/gef_test.jpeg)
