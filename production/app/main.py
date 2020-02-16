@@ -5,8 +5,10 @@ from flask_cors import CORS
 from skfuzzy import control as ctrl
 
 app = Flask(__name__)
+
 # definición de constantes
-PORT = 5000
+HOST = '0.0.0.0'
+PORT = 80
 DEBUG = True
 
 CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -66,7 +68,7 @@ def get_fuzzy(edad_, sexo_):
     return ger_f
 
 
-@app.route('/api/nutricion/ger', methods=['POST'])
+@app.route('/api/nutrition/ger', methods=['POST'])
 def get_fuzzy_ger():
     if not request.json or not ('edad' and 'sexo' and 'peso' in request.json):
         abort(400)
@@ -120,4 +122,4 @@ def get_ger_total(getf, edad, sexo, peso):
 
 
 if __name__ == '__main__':
-    app.run(port=PORT, debug=DEBUG)
+    app.run(host=HOST, port=PORT, debug=DEBUG)

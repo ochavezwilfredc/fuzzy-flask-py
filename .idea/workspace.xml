@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b463e6e-e997-407a-bcbf-993ca2f60d98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module-fuzzy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/production/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/fuzzy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nutri-fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +51,42 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/production/app" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/production/app" />
+      <recent name="$PROJECT_DIR$/production" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/production/app" />
       <recent name="$PROJECT_DIR$/module-fuzzy" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="Flask server.fuzzy-ws">
+    <configuration name="fuzzy (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fuzzy-ws" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests-fuzzy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests-fuzzy/fuzzy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fuzzy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fuzzy-ws" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,8 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.nutri-fuzzy" />
+        <item itemvalue="Python.fuzzy (1)" />
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.fuzzy" />
       </list>
     </recent_temporary>
@@ -155,7 +186,7 @@
       <workItem from="1581456814594" duration="4534000" />
       <workItem from="1581475617291" duration="318000" />
       <workItem from="1581521125660" duration="398000" />
-      <workItem from="1581812439317" duration="2860000" />
+      <workItem from="1581812439317" duration="10906000" />
     </task>
     <servers />
   </component>
@@ -163,22 +194,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1324" height="176" key="GridCell.Tab.0.bottom" timestamp="1581461358119">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state width="1324" height="233" key="GridCell.Tab.0.bottom" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state width="1324" height="233" key="GridCell.Tab.0.bottom/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
     <state width="1324" height="176" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1581461358119" />
-    <state width="1324" height="176" key="GridCell.Tab.0.center" timestamp="1581461358118">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state width="1324" height="233" key="GridCell.Tab.0.center" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state width="1324" height="233" key="GridCell.Tab.0.center/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
     <state width="1324" height="176" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1581461358118" />
-    <state width="1324" height="176" key="GridCell.Tab.0.left" timestamp="1581461358118">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state width="1324" height="233" key="GridCell.Tab.0.left" timestamp="1581825568146">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state width="1324" height="233" key="GridCell.Tab.0.left/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568146" />
     <state width="1324" height="176" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1581461358118" />
-    <state width="1324" height="176" key="GridCell.Tab.0.right" timestamp="1581461358119">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state width="1324" height="233" key="GridCell.Tab.0.right" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state width="1324" height="233" key="GridCell.Tab.0.right/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
     <state width="1324" height="176" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1581461358119" />
+    <state width="1324" height="233" key="GridCell.Tab.1.bottom" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="233" key="GridCell.Tab.1.bottom/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
+    <state width="1324" height="233" key="GridCell.Tab.1.center" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="233" key="GridCell.Tab.1.center/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
+    <state width="1324" height="233" key="GridCell.Tab.1.left" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="233" key="GridCell.Tab.1.left/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
+    <state width="1324" height="233" key="GridCell.Tab.1.right" timestamp="1581825568147">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="233" key="GridCell.Tab.1.right/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
     <state x="217" y="4" key="SettingsEditor" timestamp="1581451689383">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -198,7 +249,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fuzzy_ws$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1581458508879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/fuzzy_ws$nutri_fuzzy.coverage" NAME="nutri-fuzzy Coverage Results" MODIFIED="1581455500331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
+    <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy__1_.coverage" NAME="fuzzy (1) Coverage Results" MODIFIED="1581818340389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests-fuzzy" />
+    <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy_ws.coverage" NAME="fuzzy-ws Coverage Results" MODIFIED="1581823876130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_ws$nutri_fuzzy.coverage" NAME="nutri-fuzzy Coverage Results" MODIFIED="1581823599198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
     <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy.coverage" NAME="fuzzy Coverage Results" MODIFIED="1581453422238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
   </component>
 </project>
