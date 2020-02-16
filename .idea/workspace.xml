@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b463e6e-e997-407a-bcbf-993ca2f60d98" name="Default Changelist" comment="" />
+    <list default="true" id="2b463e6e-e997-407a-bcbf-993ca2f60d98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-fuzzy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/fuzzy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/nutri-fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +51,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module-fuzzy" />
+    </key>
+  </component>
   <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="fuzzy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fuzzy-ws" />
@@ -59,7 +70,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/static/fuzzy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module-fuzzy/fuzzy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +92,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/static/nutri-fuzzy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +108,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -112,7 +123,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -141,7 +152,10 @@
       <workItem from="1581446377529" duration="4664000" />
       <workItem from="1581451526867" duration="3193000" />
       <workItem from="1581455022985" duration="1655000" />
-      <workItem from="1581456814594" duration="4350000" />
+      <workItem from="1581456814594" duration="4534000" />
+      <workItem from="1581475617291" duration="318000" />
+      <workItem from="1581521125660" duration="398000" />
+      <workItem from="1581812439317" duration="2860000" />
     </task>
     <servers />
   </component>
@@ -149,30 +163,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1324" height="176" key="GridCell.Tab.0.bottom" timestamp="1581458517788">
+    <state width="1324" height="176" key="GridCell.Tab.0.bottom" timestamp="1581461358119">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1324" height="176" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1581458517788" />
-    <state width="1324" height="176" key="GridCell.Tab.0.center" timestamp="1581458517787">
+    <state width="1324" height="176" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1581461358119" />
+    <state width="1324" height="176" key="GridCell.Tab.0.center" timestamp="1581461358118">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1324" height="176" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1581458517787" />
-    <state width="1324" height="176" key="GridCell.Tab.0.left" timestamp="1581458517786">
+    <state width="1324" height="176" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1581461358118" />
+    <state width="1324" height="176" key="GridCell.Tab.0.left" timestamp="1581461358118">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1324" height="176" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1581458517786" />
-    <state width="1324" height="176" key="GridCell.Tab.0.right" timestamp="1581458517787">
+    <state width="1324" height="176" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1581461358118" />
+    <state width="1324" height="176" key="GridCell.Tab.0.right" timestamp="1581461358119">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1324" height="176" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1581458517787" />
+    <state width="1324" height="176" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1581461358119" />
     <state x="217" y="4" key="SettingsEditor" timestamp="1581451689383">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="217" y="4" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1581451689383" />
-    <state x="341" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1581456813301">
+    <state x="341" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1581521163271">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="341" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1581456813301" />
+    <state x="341" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1581521163271" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1581458044160">
       <screen x="0" y="0" width="1366" height="736" />
     </state>

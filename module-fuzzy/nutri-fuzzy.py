@@ -2,8 +2,7 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 
-# Los nuevos objetos antecedentes / consecuentes contienen variables del universo y pertenencia
-# funciones
+# Los nuevos objetos antecedentes / consecuentes contienen variables del universo y pertenencia funciones
 # edad = ctrl.Antecedent(np.arange(0, 3, 10, 18, 30, 60, 100), 'edad')
 edad = ctrl.Antecedent(np.arange(0, 50, 1), 'edad')
 
