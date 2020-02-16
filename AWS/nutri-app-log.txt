@@ -1,0 +1,8 @@
+ssh -l admin -o ServerAliveInterval=100 -i nutrition-app.pem 13.58.250.57
+ssh -i "nutrition-app.pem" ubuntu@ec2-13-58-250-57.us-east-2.compute.amazonaws.com
+
+
+user: adidas29019@gmail.com
+
+pass: Aplicacionmovil2020
+

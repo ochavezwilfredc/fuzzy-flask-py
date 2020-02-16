@@ -33,7 +33,19 @@
 
 
 ### Uso
+#### POSTMAN
+* Usando el verbo **POST** 
+* ENDPONIT http://13.58.250.57:5000/api/nutrition/ger
+* BODY
+```JSON
+{
+	"edad": "25",
+	"sexo": "5",
+	"peso": "80"
+}
+```
+#### POSTMAN
 - **Si le digo a este controlador que cálcule :**
     - La edad = 25, y el sexo = Mujer
 - **Genera un valor:**
-    - **GER:** 2359
+    - **GER:** 2016
