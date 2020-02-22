@@ -13,60 +13,73 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 def get_fuzzy(edad_, sexo_):
-    # print("edad: {} - sexo: {}".format(type(edad_), type(sexo_)))
+    # Los nuevos objetos antecedentes / consecuentes contienen variables del universo y pertenencia funciones
     edad = ctrl.Antecedent(np.arange(0, 100, 1), 'edad')
-    sexo = ctrl.Antecedent(np.arange(0, 25, 1), 'sexo')
-    gerf = ctrl.Consequent(np.arange(0, 61, 1), 'gerf')
+    sexo = ctrl.Antecedent(np.arange(0, 15, 1), 'sexo')
+    factor_ger_f = ctrl.Consequent(np.arange(0, 61, 1), 'factor_ger_f')
 
-    edad['niño'] = fuzz.trimf(edad.universe, [0, 5, 11])
-    edad['adolecente'] = fuzz.trimf(edad.universe, [10, 15, 17])
-    edad['joven'] = fuzz.trimf(edad.universe, [15, 24, 29])
-    edad['adulto'] = fuzz.trimf(edad.universe, [29, 40, 59])
-    edad['adulto_mayor'] = fuzz.trimf(edad.universe, [55, 80, 99])
+    # edad.automf(3)
+    edad['INFANTE'] = fuzz.trimf(edad.universe, [0, 2, 3])
+    edad['NIÑO'] = fuzz.trimf(edad.universe, [3, 9, 10])
+    edad['ADOLECENTE'] = fuzz.trimf(edad.universe, [10, 17, 18])
+    edad['JOVEN'] = fuzz.trimf(edad.universe, [18, 30, 30])
+    edad['ADULTO'] = fuzz.trimf(edad.universe, [30, 60, 60])
+    edad['ADULTO_MAYOR'] = fuzz.trimf(edad.universe, [60, 80, 100])
 
-    sexo['hombre'] = fuzz.trimf(sexo.universe, [0, 0, 10])
-    sexo['mujer'] = fuzz.trimf(sexo.universe, [5, 10, 15])
-    sexo['na'] = fuzz.trimf(sexo.universe, [10, 15, 20])
+    # sexo.automf(3)
+    sexo['HOMBRE'] = fuzz.trimf(sexo.universe, [0, 5, 5])
+    sexo['MUJER'] = fuzz.trimf(sexo.universe, [5, 10, 10])
+    sexo['NA'] = fuzz.trimf(sexo.universe, [10, 13, 15])
 
-    gerf['bajo'] = fuzz.trimf(gerf.universe, [0, 5, 10.5])
-    gerf['medio_bajo'] = fuzz.trimf(gerf.universe, [5.5, 10.5, 15.5])
-    gerf['medio'] = fuzz.trimf(gerf.universe, [15.5, 20, 25.5])
-    gerf['medio_alto'] = fuzz.trimf(gerf.universe, [25.5, 35, 40])
-    gerf['alto'] = fuzz.trimf(gerf.universe, [40, 50, 61])
+    factor_ger_f['BAJO'] = fuzz.trimf(factor_ger_f.universe, [0, 12, 12.2])
+    factor_ger_f['MEDIO_BAJO'] = fuzz.trimf(factor_ger_f.universe, [12.2, 23.4, 24.4])
+    factor_ger_f['MEDIO'] = fuzz.trimf(factor_ger_f.universe, [24.4, 35.6, 36.6])
+    factor_ger_f['MEDIO_ALTO'] = fuzz.trimf(factor_ger_f.universe, [36.6, 47.8, 48.8])
+    factor_ger_f['ALTO'] = fuzz.trimf(factor_ger_f.universe, [48.8, 55, 61])
+
+    # edad.view()
+    # sexo.view()
+    # factor_ger_f.view()
 
     # # Rules
-    rule1a = ctrl.Rule(edad['adulto'] | sexo['hombre'], gerf['bajo'])
-    rule1b = ctrl.Rule(edad['adulto'] | sexo['mujer'], gerf['medio_bajo'])
+    rule1a = ctrl.Rule(edad['INFANTE'] & sexo['HOMBRE'], factor_ger_f['ALTO'])
+    rule1b = ctrl.Rule(edad['INFANTE'] & sexo['MUJER'], factor_ger_f['ALTO'])
 
-    rule2 = ctrl.Rule(sexo['mujer'], gerf['medio'])
+    rule2a = ctrl.Rule(edad['NIÑO'] & sexo['HOMBRE'], factor_ger_f['MEDIO_BAJO'])
+    rule2b = ctrl.Rule(edad['NIÑO'] & sexo['MUJER'], factor_ger_f['MEDIO_BAJO'])
 
-    rule3a = ctrl.Rule(edad['adulto_mayor'] | sexo['hombre'], gerf['medio_alto'])
-    rule3b = ctrl.Rule(edad['adulto_mayor'] | sexo['mujer'], gerf['alto'])
+    rule3a = ctrl.Rule(edad['ADOLECENTE'] & sexo['HOMBRE'], factor_ger_f['MEDIO_BAJO'])
+    rule3b = ctrl.Rule(edad['ADOLECENTE'] & sexo['MUJER'], factor_ger_f['BAJO'])
 
-    rule4a = ctrl.Rule(edad['adolecente'] | sexo['hombre'], gerf['bajo'])
-    rule4b = ctrl.Rule(edad['adolecente'] | sexo['mujer'], gerf['medio_bajo'])
+    rule4a = ctrl.Rule(edad['JOVEN'] & sexo['HOMBRE'], factor_ger_f['MEDIO_BAJO'])
+    rule4b = ctrl.Rule(edad['JOVEN'] & sexo['MUJER'], factor_ger_f['MEDIO_BAJO'])
 
-    rule5a = ctrl.Rule(edad['joven'] | sexo['hombre'], gerf['medio'])
-    rule5b = ctrl.Rule(edad['joven'] | sexo['mujer'], gerf['medio_bajo'])
+    rule5a = ctrl.Rule(edad['ADULTO'] & sexo['HOMBRE'], factor_ger_f['BAJO'])
+    rule5b = ctrl.Rule(edad['ADULTO'] & sexo['MUJER'], factor_ger_f['MEDIO_BAJO'])
 
-    rule6a = ctrl.Rule(edad['niño'] | sexo['hombre'], gerf['bajo'])
-    rule6b = ctrl.Rule(edad['niño'] | sexo['mujer'], gerf['medio_bajo'])
+    rule6a = ctrl.Rule(edad['ADULTO_MAYOR'] & sexo['HOMBRE'], factor_ger_f['MEDIO_BAJO'])
+    rule6b = ctrl.Rule(edad['ADULTO_MAYOR'] & sexo['MUJER'], factor_ger_f['BAJO'])
 
-    gerf_ctrl = ctrl.ControlSystem(
-        [rule1a, rule1b, rule2, rule3a, rule3b, rule4a, rule4b, rule5a, rule5b, rule6a, rule6b])
-    ger = ctrl.ControlSystemSimulation(gerf_ctrl)
+    # #
+    # rule1a.view()
+    #
+    factor_ger_f_ctrl = ctrl.ControlSystem(
+        [rule1a, rule1b, rule2a, rule2b, rule3a, rule3b, rule4a, rule4b, rule5a, rule5b, rule6a, rule6b])
+    factor_ger = ctrl.ControlSystemSimulation(factor_ger_f_ctrl)
 
-    ger.input['edad'] = edad_
-    ger.input['sexo'] = sexo_
+    factor_ger.input['edad'] = int(edad_)
+    factor_ger.input['sexo'] = int(sexo_)
+    #
+    # # Crunch the numbers
+    factor_ger.compute()
 
-    ger.compute()
+    calc_factor_ger = factor_ger.output['factor_ger_f']
+    # print(calc_factor_ger)
+    # factor_ger_f.view(sim=factor_ger)
+    return calc_factor_ger
 
-    ger_f = ger.output['gerf']
-    # print("El GER para la edad: {} sexo: {} es: {}".format(edad_, sexo_, ger_f))
-    return ger_f
 
-
-@app.route('/api/nutricion/ger', methods=['POST'])
+@app.route('/api/nutrition/ger', methods=['POST'])
 def get_fuzzy_ger():
     if not request.json or not ('edad' and 'sexo' and 'peso' in request.json):
         abort(400)
@@ -74,48 +87,48 @@ def get_fuzzy_ger():
     sexo = request.json.get('sexo')
     peso = request.json.get('peso')
 
-    gerf = get_fuzzy(int(edad), int(sexo))
+    factor_ger = get_fuzzy(int(edad), int(sexo))
 
-    get_total = get_ger_total(int(gerf), int(edad), int(sexo), float(peso))
+    get_total = get_ger(int(factor_ger), int(edad), int(sexo), float(peso))
 
     return jsonify({'ger': int(get_total)}), 201
 
 
-def get_ger_total(getf, edad, sexo, peso):
+def get_ger(factor_ger, edad, sexo, peso):
     if 0 < edad <= 3:
         if sexo == 1:
-            ger = getf * peso - 54
+            ger = factor_ger * peso - 54
         else:
-            ger = getf * peso - 51
+            ger = factor_ger * peso - 51
     else:
         if 3 < edad <= 10:
             if sexo == 1:
-                ger = getf * peso + 495
+                ger = factor_ger * peso + 495
             else:
-                ger = getf * peso + 499
+                ger = factor_ger * peso + 499
         else:
             if 10 < edad <= 18:
                 if sexo == 1:
-                    ger = getf * peso + 651
+                    ger = factor_ger * peso + 651
                 else:
-                    ger = getf * peso + 746
+                    ger = factor_ger * peso + 746
             else:
                 if 18 < edad <= 30:
                     if sexo == 1:
-                        ger = getf * peso + 679
+                        ger = factor_ger * peso + 679
                     else:
-                        ger = getf * peso + 496
+                        ger = factor_ger * peso + 496
                 else:
                     if 30 < edad <= 60:
                         if sexo == 1:
-                            ger = getf * peso + 879
+                            ger = factor_ger * peso + 879
                         else:
-                            ger = getf * peso + 746
+                            ger = factor_ger * peso + 746
                     else:
                         if edad > 60 and sexo == 1:
-                            ger = getf * peso + 487
+                            ger = factor_ger * peso + 487
                         else:
-                            ger = getf * peso + 596
+                            ger = factor_ger * peso + 596
     return ger
 
 
