@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b463e6e-e997-407a-bcbf-993ca2f60d98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" beforeDir="false" afterPath="$PROJECT_DIR$/module-fuzzy/nutri-fuzzy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,7 +60,7 @@
       <recent name="$PROJECT_DIR$/production" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nutri-fuzzy-app">
+  <component name="RunManager" selected="Python.nutri-fuzzy">
     <configuration name="fuzzy (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fuzzy-ws" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,7 +217,13 @@
       <workItem from="1581950136978" duration="22000" />
       <workItem from="1582070017712" duration="875000" />
       <workItem from="1582104474559" duration="44000" />
-      <workItem from="1582395753464" duration="3721000" />
+      <workItem from="1582395753464" duration="4093000" />
+      <workItem from="1582523896478" duration="344000" />
+      <workItem from="1582553277435" duration="64000" />
+      <workItem from="1582760642120" duration="1029000" />
+      <workItem from="1582815915765" duration="215000" />
+      <workItem from="1582856582126" duration="51000" />
+      <workItem from="1582902874378" duration="10000" />
     </task>
     <servers />
   </component>
@@ -242,56 +249,56 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="466" y="112" width="430" height="511" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1582398906246" />
-    <state width="1324" height="220" key="GridCell.Tab.0.bottom" timestamp="1582398988157">
+    <state width="1314" height="173" key="GridCell.Tab.0.bottom" timestamp="1582761673216">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="186" key="GridCell.Tab.0.bottom/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581888062523" />
-    <state width="1324" height="220" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1582398988157" />
-    <state width="1324" height="220" key="GridCell.Tab.0.center" timestamp="1582398988156">
+    <state width="1314" height="173" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1582761673216" />
+    <state width="1314" height="173" key="GridCell.Tab.0.center" timestamp="1582761673216">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="186" key="GridCell.Tab.0.center/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581888062523" />
-    <state width="1324" height="220" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1582398988156" />
-    <state width="1324" height="220" key="GridCell.Tab.0.left" timestamp="1582398988156">
+    <state width="1314" height="173" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1582761673216" />
+    <state width="1314" height="173" key="GridCell.Tab.0.left" timestamp="1582761673216">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="186" key="GridCell.Tab.0.left/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581888062523" />
-    <state width="1324" height="220" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1582398988156" />
-    <state width="1324" height="220" key="GridCell.Tab.0.right" timestamp="1582398988156">
+    <state width="1314" height="173" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1582761673216" />
+    <state width="1314" height="173" key="GridCell.Tab.0.right" timestamp="1582761673216">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="186" key="GridCell.Tab.0.right/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581888062523" />
-    <state width="1324" height="220" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1582398988156" />
-    <state width="1324" height="220" key="GridCell.Tab.1.bottom" timestamp="1582398988158">
+    <state width="1314" height="173" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1582761673216" />
+    <state width="1324" height="220" key="GridCell.Tab.1.bottom" timestamp="1582399851026">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="233" key="GridCell.Tab.1.bottom/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
-    <state width="1324" height="220" key="GridCell.Tab.1.bottom/0.0.1366.736@0.0.1366.736" timestamp="1582398988158" />
-    <state width="1324" height="220" key="GridCell.Tab.1.center" timestamp="1582398988158">
+    <state width="1324" height="220" key="GridCell.Tab.1.bottom/0.0.1366.736@0.0.1366.736" timestamp="1582399851026" />
+    <state width="1324" height="220" key="GridCell.Tab.1.center" timestamp="1582399851026">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="233" key="GridCell.Tab.1.center/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
-    <state width="1324" height="220" key="GridCell.Tab.1.center/0.0.1366.736@0.0.1366.736" timestamp="1582398988158" />
-    <state width="1324" height="220" key="GridCell.Tab.1.left" timestamp="1582398988157">
+    <state width="1324" height="220" key="GridCell.Tab.1.center/0.0.1366.736@0.0.1366.736" timestamp="1582399851026" />
+    <state width="1324" height="220" key="GridCell.Tab.1.left" timestamp="1582399851024">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="233" key="GridCell.Tab.1.left/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
-    <state width="1324" height="220" key="GridCell.Tab.1.left/0.0.1366.736@0.0.1366.736" timestamp="1582398988157" />
-    <state width="1324" height="220" key="GridCell.Tab.1.right" timestamp="1582398988158">
+    <state width="1324" height="220" key="GridCell.Tab.1.left/0.0.1366.736@0.0.1366.736" timestamp="1582399851024" />
+    <state width="1324" height="220" key="GridCell.Tab.1.right" timestamp="1582399851026">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1324" height="233" key="GridCell.Tab.1.right/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581825568147" />
-    <state width="1324" height="220" key="GridCell.Tab.1.right/0.0.1366.736@0.0.1366.736" timestamp="1582398988158" />
-    <state x="1583" y="4" key="SettingsEditor" timestamp="1581886410014">
-      <screen x="1366" y="0" width="1366" height="768" />
+    <state width="1324" height="220" key="GridCell.Tab.1.right/0.0.1366.736@0.0.1366.736" timestamp="1582399851026" />
+    <state x="217" y="4" width="1115" height="730" key="SettingsEditor" timestamp="1582524255512">
+      <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="1583" y="4" key="SettingsEditor/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581886410014" />
-    <state x="217" y="4" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1581451689383" />
-    <state x="1707" y="206" key="com.intellij.ide.util.TipDialog" timestamp="1582104474706">
-      <screen x="1366" y="0" width="1366" height="768" />
+    <state x="217" y="4" width="1115" height="730" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1582524255512" />
+    <state x="341" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1582902877302">
+      <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="1707" y="206" key="com.intellij.ide.util.TipDialog/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1582104474706" />
-    <state x="341" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1581950135267" />
+    <state x="341" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1582902877302" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1581458044160">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -306,7 +313,7 @@
     <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy__1_.coverage" NAME="fuzzy (1) Coverage Results" MODIFIED="1581818340389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests-fuzzy" />
     <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy_ws.coverage" NAME="fuzzy-ws Coverage Results" MODIFIED="1581823876130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fuzzy_ws$nutri_fuzzy_app.coverage" NAME="nutri-fuzzy-app Coverage Results" MODIFIED="1582398930778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fuzzy_ws$nutri_fuzzy.coverage" NAME="nutri-fuzzy Coverage Results" MODIFIED="1582398838048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
+    <SUITE FILE_PATH="coverage/fuzzy_ws$nutri_fuzzy.coverage" NAME="nutri-fuzzy Coverage Results" MODIFIED="1582760775245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
     <SUITE FILE_PATH="coverage/fuzzy_ws$fuzzy.coverage" NAME="fuzzy Coverage Results" MODIFIED="1581453422238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static" />
   </component>
 </project>

@@ -54,6 +54,7 @@ rule1a.view()
 #
 factor_ger_f_ctrl = ctrl.ControlSystem(
     [rule1a, rule1b, rule2a, rule2b, rule3a, rule3b, rule4a, rule4b, rule5a, rule5b, rule6a, rule6b])
+
 factor_ger = ctrl.ControlSystemSimulation(factor_ger_f_ctrl)
 
 
@@ -65,3 +66,4 @@ factor_ger.compute()
 #
 print(factor_ger.output['factor_ger_f'])
 factor_ger_f.view(sim=factor_ger)
+
