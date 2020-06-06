@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nutri-production-final" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -223,7 +223,7 @@
       <workItem from="1582815915765" duration="215000" />
       <workItem from="1582856582126" duration="51000" />
       <workItem from="1582902874378" duration="10000" />
-      <workItem from="1586922697579" duration="1392000" />
+      <workItem from="1586922697579" duration="3072000" />
     </task>
     <servers />
   </component>
@@ -245,9 +245,10 @@
     </state>
     <state x="1782" y="135" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1581886125293" />
     <state x="416" y="129" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.736@0.0.1366.736" timestamp="1582397898941" />
-    <state x="466" y="112" width="430" height="511" key="FileChooserDialogImpl" timestamp="1582398906246">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state x="1832" y="117" width="430" height="511" key="FileChooserDialogImpl" timestamp="1586925937646">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state x="1832" y="117" key="FileChooserDialogImpl/0.0.1366.736/1366.0.1366.768@1366.0.1366.768" timestamp="1586925937646" />
     <state x="466" y="112" width="430" height="511" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1582398906246" />
     <state width="1314" height="173" key="GridCell.Tab.0.bottom" timestamp="1582761673216">
       <screen x="0" y="0" width="1366" height="736" />
