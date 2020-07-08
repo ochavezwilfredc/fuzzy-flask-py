@@ -41,7 +41,7 @@
 ### Uso
 ##### POSTMAN
 * Usando el verbo **POST** 
-* ENDPONIT http://13.58.250.57:5000/api/nutrition/ger
+* ENDPONIT http://18.229.163.97:5000/api/nutrition/ger
 * BODY
 ```JSON
 {
